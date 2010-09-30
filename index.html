@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chris H's Whack-A-Mole</title>
+	<style type="text/css">
+		#wam-game {
+			background: #e1e1e1;
+			height: 300px;
+			width: 500px;
+			display: block;
+			position: relative;
+		}
+		.pesky-mole,
+		.pesky-mole-dead {
+			width: 100px;
+			height: 100px;
+			background: black;
+			position: absolute;
+			display: block;
+			cursor: pointer;
+		}
+		
+		.pesky-mole-dead {
+			background: red;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<h1>Chris H's Whack-A-Mole Game</h1>
+	<div id="wam-game"></div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="whackamole.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			whackamole.setup("wam-game");
+		})
+	</script>
+	
+</body>
+</html>
