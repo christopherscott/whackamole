@@ -5,7 +5,7 @@
 var whackamole = whackamole || (function(window, undefined) {
 	
 	// booleans, ints, and timers oh my!
-	var game, score, popping, startTime, currentTime, clicked, moles, gameTimeout;
+	var game, score, popping, startTime, currentTime, clicked, moles, gameTimeout, hits = 0;
 	
 	// configuration options
 	// TODO: make game configurable, by passing in options object like jquery plugin	
@@ -40,6 +40,7 @@ var whackamole = whackamole || (function(window, undefined) {
 		kill: function() {
 			var currentTime = (new Date).getTime();
 			score += (Math.floor( ( ( poppingInterval - (currentTime - startTime) ) / poppingInterval) * 100 )) * 10;
+			hits++;
 			this.mole.className = deadClass;
 			this.mode = "dead";
 		},
@@ -58,7 +59,7 @@ var whackamole = whackamole || (function(window, undefined) {
 		reset: function() {
 			game.mode = "main";
 			popping = false;
-			score = moles = 0;
+			hits = score = moles = 0;
 		},
 		// yeah, so.. these two don't really do a whole lot
 		showStart: function() {
@@ -95,7 +96,7 @@ var whackamole = whackamole || (function(window, undefined) {
 		sb = game.scoreboard = document.createElement("div");
 		sb.className = "wam-scoreboard";
 		sb.update = function() {
-			this.innerHTML = "points: " + score + "<br />moles: " + moles;
+			this.innerHTML = "points: " + score + "<br />Moles: " + hits + " / " + moles;
 		}
 		
 		// the start screen
@@ -170,7 +171,7 @@ var whackamole = whackamole || (function(window, undefined) {
 				break;
 			case "end":
 			default:
-				game.scoreboard.innerHTML = "Game Over!<br /> Final Score: " + score;
+				game.scoreboard.innerHTML = "Final Score: " + score + "<br />Moles: " + hits + " / " + moles;
 				game.endScreen.style.display = "block";
 				break;
 		}
