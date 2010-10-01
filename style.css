@@ -1,0 +1,75 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1 {
+	font-size: 24px;
+	font-weight: bold;
+	border-bottom: 3px solid #b7b7b7;
+}
+
+p {
+	font-size: 11px;
+}
+.wrapper {
+	padding: 5px;
+	background: #e1e1e1;
+	width: 510px;
+	margin: 50px auto;
+}
+
+#wam-game {
+	background: #78b73b;
+	height: 300px;
+	width: 500px;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	border: 1px solid #3b5a1d;
+}
+.wam-pesky-mole,
+.wam-pesky-mole-dead {
+	width: 125px;
+	height: 88px;
+	background: url('images/mole4.png') no-repeat;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.wam-pesky-mole-dead {
+	background: url('images/mole-dead8.png') no-repeat;
+}
+
+.wam-scoreboard {
+	width: 200px;
+	line-height: 28px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background: #3b5a1d;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: arial;
+}
+.wam-startScreen {
+	height: 100%;
+	width: 100%;
+	background: url('images/startScreen.png');
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 20;
+}
+.wam-endScreen {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	height: 68px;
+	width: 308px;
+	background: url('images/endScreen.png');
+	text-indent: -9999px;
+	cursor: pointer;
+}

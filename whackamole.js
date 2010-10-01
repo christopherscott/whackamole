@@ -13,7 +13,7 @@ var whackamole = whackamole || (function(window, undefined) {
 		deadClass = "wam-pesky-mole-dead",
 		hidingInterval = 1500,
 		poppingInterval = 750,
-		moleLimit = 2;
+		moleLimit = 10;
 		
 	// utility function to get computed style
 	// copied from a google search ;)
@@ -133,10 +133,11 @@ var whackamole = whackamole || (function(window, undefined) {
 		// build the thing..
 		// i dunno, this just seems like it's screaming for a FOR loop
 		// but i'm just lazy... i admit it.
-		stage.appendChild(es);
 		stage.appendChild(ss);
 		stage.appendChild(sb);
 		stage.appendChild(mole);
+		stage.appendChild(es);
+		
 	}
 	
 	// at first I was calling this "loop", but it wasn't really a loop
