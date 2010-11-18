@@ -1,3 +1,17 @@
+/*
+
+	Whack-A-Mole v0.1
+	copyright 2010 Christopher Scott Hernandez
+
+	JavaScript/HTML game written as a challenge by my friend Rob Allen at work.
+	
+	This document is licensed as free software under the terms of the
+	MIT License: http://www.opensource.org/licenses/mit-license.php 
+	
+*/
+
+
+
 // our one global
 // ...thought about doing it like jquery
 // what with the whole window.whackamole = whackamole bit, but... 
