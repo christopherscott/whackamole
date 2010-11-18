@@ -13,3 +13,4 @@ TODO:
 - Fix bug where last mole covers the score (at the end).
 - Add more levels...maybe different backrounds.
 - Test in multiple browsers
+- Add open source license (MIT?)
