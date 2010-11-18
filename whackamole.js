@@ -1,6 +1,6 @@
 /*
 
-	Whack-A-Mole v0.1
+	Whack-A-Mole v0
 	copyright 2010 Christopher Scott Hernandez
 
 	JavaScript/HTML game written as a challenge by my friend Rob Allen at work.
