@@ -7,7 +7,7 @@ I wrote this in about a day, including making the graphics. I chose not to use j
 
 All code and resources (including source imagery) is provided free of charge under the MIT open-source license.
 
-Play online: [http://whackamole.christopher-scott.com](http://christopher-scott.com/whackamole/)
+Play online: [http://whackamole.christopher-scott.com/](http://whackamole.christopher-scott.com/)
 
 TODO:
 -----
